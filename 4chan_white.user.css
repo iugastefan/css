@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name           4chan white theme
+@namespace      github.com/iugastefan/css
+@homepageURL    https://github.com/iugastefan/css
+@updateURL      https://raw.githubusercontent.com/iugastefan/css/master/4chan_white.user.css
+@version        1.0.0
+@description    White theme for 4chan
+@author         Iuga Stefan
+@license        GPL-3.0-only
+==/UserStyle== */
+@-moz-document regexp(".*\\.?4chan(nel)?.org(/.*)?") {
+    *:not(.flag),
+    .backlink > span > a.quotelink {
+        text-decoration: none !important;
+        background: white !important;
+        color: black !important;
+    }
+
+    .reply.highlight {
+        background: beige !important;
+    }
+
+    .reply {
+        display: block !important;
+        border: solid black 1px !important;
+    }
+
+    .backlink > span > a.quotelink,
+    .postMessage > a.quotelink {
+        text-decoration: underline !important;
+    }
+    body {
+        display: block !important;
+        margin: auto !important;
+        width: 1000px !important;
+    }
+}
