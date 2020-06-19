@@ -34,7 +34,7 @@
         margin: auto !important;
         width: 1000px !important;
     }
-    [id|=container], .middlead.center, hr {
+    [id|=container], .middlead.center, hr, #bannerCnt {
         display: none !important;
     }
 }
