@@ -5,56 +5,57 @@
 @updateURL      https://raw.githubusercontent.com/iugastefan/css/master/4chan_black.user.css
 @version        1.0.0
 @description    Black theme for 4chan
-@author         Iuga Stefan
+@author         Stefan Iuga
 @license        GPL-3.0-only
 ==/UserStyle== */
 @-moz-document regexp(".*\\.?4chan(nel)?.org(/.*)?") {
+  *:not(.flag),
+  .backlink > span > a.quotelink {
+    text-decoration: none !important;
+    background: black !important;
+    color: white !important;
+  }
 
-    *:not(.flag),
-    .backlink > span > a.quotelink {
-        text-decoration: none !important;
-        background: black !important;
-        color: white !important;
+  .reply.highlight,
+  .reply:target {
+    background: gray !important;
+  }
+
+  .reply {
+    display: block !important;
+    border: solid white 1px !important;
+  }
+
+  .quote {
+    color: #789922 !important;
+  }
+
+  .backlink > span > a.quotelink,
+  .postMessage > a.quotelink {
+    text-decoration: underline !important;
+  }
+
+  @media screen and (min-width: 600px) {
+    body {
+      display: block !important;
+      margin: auto !important;
+      width: 1000px !important;
     }
+  }
 
-    .reply.highlight,
-    .reply:target {
-        background: gray !important;
-    }
+  [id|="container"],
+  .middlead.center,
+  hr,
+  #bannerCnt {
+    display: none !important;
+  }
 
-    .reply {
-        display: block !important;
-        border: solid white 1px !important;
-    }
+  .expanded-thumb,
+  .expandedWebm {
+    max-width: 100% !important;
+  }
 
-    .quote {
-        color: #789922 !important;
-    }
-
-    .backlink > span > a.quotelink,
-    .postMessage > a.quotelink {
-        text-decoration: underline !important;
-    }
-
-    @media screen and (min-width: 600px) {
-        body {
-            display: block !important;
-            margin: auto !important;
-            width: 1000px !important;
-        }
-    }
-
-    [id|=container],
-    .middlead.center,
-    hr,
-    #bannerCnt {
-        display: none !important;
-    }
-
-    .expanded-thumb,
-    .expandedWebm {
-        max-width: 100% !important;
-    }
-
-    
+  .deadlink {
+    text-decoration: line-through !important;
+  }
 }
