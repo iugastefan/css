@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name           4chan {{ theme["name"] }} theme
+@namespace      github.com/iugastefan/css
+@homepageURL    https://github.com/iugastefan/css
+@updateURL      https://raw.githubusercontent.com/iugastefan/css/master/4chan/themes/{{theme["file_name"]}}.user.css
+@version        1.0.0
+@description    {{theme["description"]}}
+@author         Stefan Iuga
+@license        GPL-3.0-only
+==/UserStyle== */
+@-moz-document regexp(".*\\.?4chan(nel)?.org(/.*)?") {
+  *:not(.flag),
+  .backlink > span > a.quotelink {
+    text-decoration: none !important;
+    background: {{theme["link_background"]}} !important;
+    color: {{theme["link_color"]}} !important;
+  }
+
+  .reply.highlight,
+  .reply:target {
+    background: {{theme["reply_background"]}} !important;
+  }
+
+  .reply {
+    display: block !important;
+    border: solid {{theme["reply_border_color"]}} 1px !important;
+  }
+
+  .quote {
+    color: {{theme["quote_color"]}} !important;
+  }
+
+  .backlink > span > a.quotelink,
+  .postMessage > a.quotelink {
+    text-decoration: underline !important;
+  }
+
+  @media screen and (min-width: 600px) {
+    body {
+      display: block !important;
+      margin: auto !important;
+      width: 1000px !important;
+    }
+  }
+
+  [id|="container"],
+  .middlead.center,
+  hr,
+  #bannerCnt {
+    display: none !important;
+  }
+
+  .expanded-thumb,
+  .expandedWebm {
+    max-width: 100% !important;
+  }
+
+  .deadlink {
+    text-decoration: line-through !important;
+  }
+}

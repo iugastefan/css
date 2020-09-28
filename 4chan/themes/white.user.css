@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name           4chan black theme
+@name           4chan white theme
 @namespace      github.com/iugastefan/css
 @homepageURL    https://github.com/iugastefan/css
-@updateURL      https://raw.githubusercontent.com/iugastefan/css/master/4chan_black.user.css
+@updateURL      https://raw.githubusercontent.com/iugastefan/css/master/4chan/themes/white.user.css
 @version        1.0.0
-@description    Black theme for 4chan
+@description    White theme for 4chan
 @author         Stefan Iuga
 @license        GPL-3.0-only
 ==/UserStyle== */
@@ -12,18 +12,18 @@
   *:not(.flag),
   .backlink > span > a.quotelink {
     text-decoration: none !important;
-    background: black !important;
-    color: white !important;
+    background: white !important;
+    color: black !important;
   }
 
   .reply.highlight,
   .reply:target {
-    background: gray !important;
+    background: beige !important;
   }
 
   .reply {
     display: block !important;
-    border: solid white 1px !important;
+    border: solid black 1px !important;
   }
 
   .quote {
