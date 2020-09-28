@@ -16,6 +16,11 @@ def init_theme(info: {str, str, str}, link: {str, str},
 
 
 themes = [
+    init_theme(info={"name": "solarized", "file_name": "solarized",
+                     "description": "Solarized theme for 4chan"},
+               link={"color": "#839496", "background": "#002b36"},
+               reply={"background": "#073642", "border_color": "#586e75"},
+               quote_color="#859900"),
     init_theme(info={"name": "black", "file_name": "black",
                      "description": "Black theme for 4chan"},
                link={"color": "white", "background": "black"},

@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name           4chan solarized theme
+@namespace      github.com/iugastefan/css
+@homepageURL    https://github.com/iugastefan/css
+@updateURL      https://raw.githubusercontent.com/iugastefan/css/master/4chan/themes/solarized.user.css
+@version        1.0.0
+@description    Solarized theme for 4chan
+@author         Stefan Iuga
+@license        GPL-3.0-only
+==/UserStyle== */
+@-moz-document regexp(".*\\.?4chan(nel)?.org(/.*)?") {
+  *:not(.flag),
+  .backlink > span > a.quotelink {
+    text-decoration: none !important;
+    background: #002b36 !important;
+    color: #839496 !important;
+  }
+
+  .reply.highlight,
+  .reply:target {
+    background: #073642 !important;
+  }
+
+  .reply {
+    display: block !important;
+    border: solid #586e75 1px !important;
+  }
+
+  .quote {
+    color: #859900 !important;
+  }
+
+  .backlink > span > a.quotelink,
+  .postMessage > a.quotelink {
+    text-decoration: underline !important;
+  }
+
+  @media screen and (min-width: 600px) {
+    body {
+      display: block !important;
+      margin: auto !important;
+      width: 1000px !important;
+    }
+  }
+
+  [id|="container"],
+  .middlead.center,
+  hr,
+  #bannerCnt {
+    display: none !important;
+  }
+
+  .expanded-thumb,
+  .expandedWebm {
+    max-width: 100% !important;
+  }
+
+  .deadlink {
+    text-decoration: line-through !important;
+  }
+}
